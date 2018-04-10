@@ -3,19 +3,7 @@
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
-transform: translateZ(0);
-  /** Clear list styles */
-  /* Auto-place container */
-  /* Auto-placed GUI's */
-  /* Line items that don't contain folders. */
-  /** Folder names */
-  /** Hides closed items */
-  /** Controller row */
-  /** Name-half (left) */
-  /** Controller-half (right) */
-  /** Controller placement */
-  /** Shorter number boxes when slider is present. */
-  /** Ensure the entire boolean and function row shows a hand */}
+transform: translateZ(0);}
   .dg ul {
     list-style: none;
     margin: 0;
@@ -33,7 +21,6 @@ transform: translateZ(0);
     height: 0;
     z-index: 0; }
   .dg:not(.ac) .main {
-    /** Exclude mains in ac so that we don't hide close button */
     overflow: hidden; }
   .dg.main {
 
@@ -42,7 +29,6 @@ transform: translateZ(0);
       overflow-y: auto; }
       .dg.main.taller-than-window .close-button {
         opacity: 1;
-        /* TODO, these are style notes */
         margin-top: -1px;
         border-top: 2px solid var(--myyellow); }
     .dg.main ul.closed .close-button {
@@ -51,15 +37,9 @@ transform: translateZ(0);
     .dg.main .close-button.drag {
       opacity: 1; }
     .dg.main .close-button {
-      /*opacity: 0;*/
-      /*-webkit-transition: opacity 0.5s linear;
-      -o-transition: opacity 0.5s linear;
-      -moz-transition: opacity 0.5s linear;
-      transition: opacity 0.5s linear;*/
       border: 2px solid var(--myyellow); 
       line-height: 39px;
       height: 40px;
-      /* TODO, these are style notes */
       cursor: pointer;
       text-align: center;
       background-color: var(--myblack); }
