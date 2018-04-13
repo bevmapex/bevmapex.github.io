@@ -85,13 +85,12 @@
                 fgui = makefgui();
 
                 var pelstart = lastps, pelend = lastpe;
-                var piclink = defimg;
                 //main function that runs all
                 //insead of piclink it is possible to use imageURL directly
                 //see fmanage.js for parsebevtxt
                 //init data params
                 var parin = new setindataparin();
-                parin.set(piclink, pelstart, pelend);
+                parin.set('', pelstart, pelend);
                 var mygeo = new setindata('MainGeoDiv', fgui, parin);
                 //attach gui for first run
                 var fcontainer = document.getElementById("BeverGeoPlot");

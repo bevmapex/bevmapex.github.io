@@ -1,9 +1,9 @@
 .dg {
--webkit-transform: translateZ(0);
+/*-webkit-transform: translateZ(0);
 -moz-transform: translateZ(0);
 -ms-transform: translateZ(0);
 -o-transform: translateZ(0);
-transform: translateZ(0);
+transform: translateZ(0);*/
   /** Clear list styles */
   /* Auto-place container */
   /* Auto-placed GUI's */
@@ -90,29 +90,47 @@ transform: translateZ(0);
         position: fixed; }
   .dg li {
     opacity:1;
-    /*-o-transition: height 0.5s ease-out;*/
-    /*-moz-transition: height 0.5s ease-out;*/
-    /*transition: max-height 1s linear,
-        opacity 0.4s,
-        border 0.1s;*/
-    transition: all 0.18s ease-in, opacity 0.30s;
-    /*,font-size 0.2s;*/
-    /*transition: opacity 1s linear;*/
-    /*transition: width 0.5s ease-out;*/
-    /*-webkit-transition: width 0.5s ease-out;
-    -o-transition: width 0.5s ease-out;
-    -moz-transition: width 0.5s ease-out;
-    */
-    /*border:0 !important;*/
     box-sizing: border-box !important;
-    
+    transition: all 0.3s linear;
+    transform:scaleY(1);
   }
+
+  @keyframes overf {
+    from {overflow:visible}
+    to {overflow:hidden}
+}
+
+  .dg .closed li:not(.title),
+  .dg .closed ul li,
+  .dg .closed ul li > * {
+
+    transform:scaleY(0.2);
+
+    max-height: 0;
+    min-height: 0;
+    height:0;
+    /*overflow: hidden;*/
+    border: 0;
+    opacity:0;
+    transition:
+        all 0.5s ease;
+   /*animation-name: overf;
+   animation-duration: 0.9s;*/
+
+  }
+
+    /*#fguipos.dg .closed li:not(.title),
+    #fguipos.dg .closed ul li,
+    #fguipos.dg .closed ul li > * {
+        animation-name: none;
+    }*/
+
   .dg li:not(.folder) {
     cursor: auto;
     height: 40px;
     line-height: 39px;
     max-height:200px;
-    max-width: 600px;
+
   }
 
 
@@ -127,17 +145,7 @@ transform: translateZ(0);
     border-top-left-radius:10px;
     border-bottom-left-radius:10px;
   }
-  .dg .closed li:not(.title),
-  .dg .closed ul li,
-  .dg .closed ul li > * {
-    max-height: 0;
-    min-height: 0;
-    height:0;
-    overflow: hidden;
-    border: 0;
-    opacity:0;
-    transition: all 0.12s ease-in, opacity 0.30s;
-  }
+
   .dg .cr {
     clear: both;
     padding-left: 3px;
@@ -227,7 +235,7 @@ transform: translateZ(0);
     font-size: 13px;
     line-height: 15px; }
 
-/* TODO Separate style and structure */
+/* TODO Separate style and structure 
 #dg-new-constructor {
   padding: 10px;
   color: #222;
