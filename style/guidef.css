@@ -92,7 +92,7 @@ transform: translateZ(0);*/
     opacity:1;
     box-sizing: border-box !important;
     transition: all 0.3s linear;
-    transform:scaleY(1);
+    /*transform:scaleY(1);*/
   }
 
   @keyframes overf {
@@ -104,7 +104,7 @@ transform: translateZ(0);*/
   .dg .closed ul li,
   .dg .closed ul li > * {
 
-    transform:scaleY(0.2);
+    /*transform:scaleY(0.2);*/
 
     max-height: 0;
     min-height: 0;
