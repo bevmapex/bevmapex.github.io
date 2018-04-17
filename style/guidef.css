@@ -110,7 +110,9 @@ transform: translateZ(0);*/
     max-height: 0;
     min-height: 0;
     height:0;
-    /*overflow: hidden;*/
+    /*line-height: 0px;*/
+    /*font-size:0px;*/
+    /*overflow:hidden;*/
     border: 0;
     opacity:0;
     transition: 
@@ -119,6 +121,10 @@ transform: translateZ(0);*/
    /*animation-name: overf;
    animation-duration: 0.9s;*/
 
+  }
+
+  .closed li.cr.color{
+      overflow:hidden;
   }
 
     /*#fguipos.dg .closed li:not(.title),
@@ -291,8 +297,8 @@ transform: translateZ(0);*/
       background: #676767; }
   .dg li:not(.folder) {
     background: #fff;
-    border-top: 1px solid var(--myyellow);
-    border-bottom: 1px solid var(--myyellow);
+    /*border-top: 0.5px solid var(--myyellow);*/
+    border-bottom: 0.5px solid var(--myyellow);
 
   }
   .dg li.save-row {
@@ -352,18 +358,18 @@ transform: translateZ(0);*/
     .dg .cr.number input[type=tel],
     .dg .cr.number input[type=text] {
       color: var(--myviolet);
-      font-size: 26px;
+      font-size: 25px;
     }
   .dg .cr.string {
     border-left: 3px solid ;
     border-right: 3px solid 
   }
     .dg .cr.string textarea,input[type=tel] {
-      font-size: 26px;
+      font-size: 25px;
       color: #FFF;
     }
     .dg .cr.string textarea {
-      height:32px;
+      height:29px;
       resize:none;
     }
     .dg .cr.string textarea:not(.myta) {
