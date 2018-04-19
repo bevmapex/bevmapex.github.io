@@ -17,11 +17,9 @@
 
 html {
     overflow: hidden;
+    touch-action: none;
 }
 
-* {
-touch-action: manipulation;
-}
 
 
        body {
